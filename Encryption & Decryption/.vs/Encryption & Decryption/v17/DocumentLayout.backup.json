@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA3A215-9B44-4708-80EE-F902791433E4}|Encryption \u0026 Decryption.csproj|D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\encryptiondecryptionscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCA3A215-9B44-4708-80EE-F902791433E4}|Encryption \u0026 Decryption.csproj|solutionrelative:encryptiondecryptionscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA3A215-9B44-4708-80EE-F902791433E4}|Encryption \u0026 Decryption.csproj|d:\\vscode\\purple\\encryption \u0026 decryption project\\encryption \u0026 decryption\\encryptiondecryptionscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCA3A215-9B44-4708-80EE-F902791433E4}|Encryption \u0026 Decryption.csproj|solutionrelative:encryptiondecryptionscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EncryptionDecryptionScreen.cs",
+              "DocumentMoniker": "D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\EncryptionDecryptionScreen.cs",
+              "RelativeDocumentMoniker": "EncryptionDecryptionScreen.cs",
+              "ToolTip": "D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\EncryptionDecryptionScreen.cs",
+              "RelativeToolTip": "EncryptionDecryptionScreen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:44:51.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EncryptionDecryptionScreen.cs [Design]",
+              "DocumentMoniker": "D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\EncryptionDecryptionScreen.cs",
+              "RelativeDocumentMoniker": "EncryptionDecryptionScreen.cs",
+              "ToolTip": "D:\\vscode\\Purple\\Encryption \u0026 Decryption Project\\Encryption \u0026 Decryption\\EncryptionDecryptionScreen.cs [Design]",
+              "RelativeToolTip": "EncryptionDecryptionScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:44:42.994Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
