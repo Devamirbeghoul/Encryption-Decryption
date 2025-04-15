@@ -526,6 +526,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "fmEncryptionDecryption";
             this.Text = "Encryption / Decryption Screen";
+            this.Deactivate += new System.EventHandler(this.fmEncryptionDecryption_Deactivate);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProviderOfProject)).EndInit();

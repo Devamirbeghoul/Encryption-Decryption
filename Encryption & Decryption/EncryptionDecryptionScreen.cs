@@ -16,14 +16,20 @@ namespace Encryption___Decryption
 {
     public partial class fmEncryptionDecryption : Form
     {
-        public fmEncryptionDecryption()
+        public fmEncryptionDecryption(Func <string , string> Encrypt , Func <string , string> Decrypt , fmMain Main)
         {
             InitializeComponent();
             CustomWindow(Color.FromArgb(153, 0, 18), Color.Black, Color.FromArgb(153, 0, 18), Handle);
             cbEncryptionLanguages.SelectedIndex = 0;
             cbDecryptionLanguages.SelectedIndex = 0;
+            _Encrypt = Encrypt;
+            _Decrypt = Decrypt;
+            _Main = Main;
         }
 
+        Func<string, string> _Encrypt;
+        Func<string, string> _Decrypt;
+        fmMain _Main;
         private string ToBgr(Color c) => $"{c.B:X2}{c.G:X2}{c.R:X2}";
 
         [DllImport("DwmApi")]
@@ -49,26 +55,21 @@ namespace Encryption___Decryption
 
         void SaveInFile(string fileName , TextBox Text)
         {
-            string Data = Text.Text;
-
-            StreamWriter Writer = new StreamWriter(fileName);
-            Writer.Write(Data);
-
-            Writer.Close();
+            using (StreamWriter Writer = new StreamWriter(fileName))
+            {
+                Writer.Write(Text.Text);
+            }
+            
         }
 
         void ReadData(string fileName, ref TextBox Text)
         {
-            string Data = Text.Text;
+            using (StreamReader Reader = new StreamReader(fileName))
+            {
+                StartWrite(Text);
 
-
-            StreamReader Reader = new StreamReader(fileName);
-
-            StartWrite(Text);
-
-            Text.Text = Reader.ReadToEnd();
-
-            
+                Text.Text = Reader.ReadToEnd();
+            }
         }
 
         void StartWrite(TextBox Text)
@@ -143,7 +144,7 @@ namespace Encryption___Decryption
             if (sender == cbEncryptionLanguages)
             {
                 tbEncryptionRead.Clear();
-                ResetEncryptoin();
+                ResetEncryption();
                 ChangeTextBoxContentEncryption();
                 return;
             }
@@ -206,55 +207,9 @@ namespace Encryption___Decryption
             return false;
         }
 
-        string Encryption(string OriginalText, int Key = 2)
-        {
-            string DecryptedText = "";
-
-            foreach (char c in OriginalText)
-            {
-                if (char.IsLetter(c))
-                {
-                    char Shifted = (char)(c + Key);
-                    DecryptedText += Shifted;
-                }
-                else
-                {
-                    DecryptedText += c;
-                }
-
-            }
-
-            return DecryptedText;
-        }
-
-        string Decryption(string DecryptedText , int Key = 2)
-        {
-            string OriginalText = "";
-
-            foreach (char c in DecryptedText)
-            {
-                if (char.IsLetter(c))
-                {
-                    
-                    char Shifted = (char)(c - Key);
-                    OriginalText += Shifted;
-                }
-                else
-                {
-                    OriginalText += c;
-                }
-
-            }
-
-            return OriginalText;
-        }
-
-
         private void Perform_Click(object sender, EventArgs e)
         {
             string Language = string.Empty;
-
-            string Result = string.Empty;
 
             if (sender == btnEncryption)
             {
@@ -274,9 +229,7 @@ namespace Encryption___Decryption
 
                 ErrorProviderOfProject.SetError(tbEncryptionRead, "");
 
-                Result = Encryption(tbEncryptionRead.Text.Trim());
-
-                tbEncryptionResult.Text = Result;
+                tbEncryptionResult.Text = _Encrypt(tbEncryptionRead.Text.Trim());
                 btnEncryptionSave.Enabled = true;
                 btnEncryptionCopy.Enabled = true;
 
@@ -300,9 +253,8 @@ namespace Encryption___Decryption
 
                 ErrorProviderOfProject.SetError(tbDecryptionRead, "");
 
-                Result = Decryption(tbDecryptionRead.Text.Trim());
 
-                tbDecryptionResult.Text = Result;
+                tbDecryptionResult.Text = _Decrypt(tbDecryptionRead.Text.Trim());
                 btnDecryptionSave.Enabled = true;
                 btnDecryptionCopy.Enabled = true;
 
@@ -319,7 +271,7 @@ namespace Encryption___Decryption
             tbDecryptionResult.Clear();
         }
 
-        void ResetEncryptoin()
+        void ResetEncryption()
         {
             btnEncryptionSave.Enabled = false;
             btnEncryptionCopy.Enabled = false;
@@ -331,7 +283,7 @@ namespace Encryption___Decryption
             if (sender == btnEncryptionReset)
             {
                 ChangeTextBoxContentEncryption();
-                ResetEncryptoin();
+                ResetEncryption();
                 return;
             }
 
@@ -394,6 +346,13 @@ namespace Encryption___Decryption
                     ReadData(OpenFile.FileName, ref tbDecryptionRead);
                 return;
             }
+        }
+
+        private void fmEncryptionDecryption_Deactivate(object sender, EventArgs e)
+        {
+            _Main.Show();
+            this.Close();
+            
         }
     }
 }

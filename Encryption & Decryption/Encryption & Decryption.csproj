@@ -51,16 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decryption Methods\Decryption.cs" />
+    <Compile Include="Encryption Methods\Encryption.cs" />
     <Compile Include="EncryptionDecryptionScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EncryptionDecryptionScreen.Designer.cs">
       <DependentUpon>EncryptionDecryptionScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMain.Designer.cs">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\Keys.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EncryptionDecryptionScreen.resx">
       <DependentUpon>EncryptionDecryptionScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMain.resx">
+      <DependentUpon>fmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,5 +96,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

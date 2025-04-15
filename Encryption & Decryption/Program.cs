@@ -16,7 +16,7 @@ namespace Encryption___Decryption
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmEncryptionDecryption());
+            Application.Run(new fmMain());
         }
     }
 }

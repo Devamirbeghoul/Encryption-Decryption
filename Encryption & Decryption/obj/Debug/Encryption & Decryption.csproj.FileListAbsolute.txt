@@ -10,3 +10,16 @@ D:\vscode\Purple\Encryption & Decryption Project\Encryption & Decryption\obj\Deb
 D:\vscode\Purple\Encryption & Decryption Project\Encryption & Decryption\obj\Debug\Encryption & Decryption.pdb
 D:\vscode\Purple\Encryption & Decryption Project\Encryption & Decryption\bin\Debug\Guna.UI2.dll
 D:\vscode\Purple\Encryption & Decryption Project\Encryption & Decryption\obj\Debug\Encrypti.7A5E1C8C.Up2Date
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\bin\Debug\Encryption & Decryption.exe.config
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\bin\Debug\Encryption & Decryption.exe
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\bin\Debug\Encryption & Decryption.pdb
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\bin\Debug\Guna.UI2.dll
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption & Decryption.csproj.AssemblyReference.cache
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption___Decryption.fmEncryptionDecryption.resources
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption___Decryption.Properties.Resources.resources
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption & Decryption.csproj.GenerateResource.cache
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption & Decryption.csproj.CoreCompileInputs.cache
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encrypti.7A5E1C8C.Up2Date
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption & Decryption.exe
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption & Decryption.pdb
+D:\vscode\Purple\Encryption & Decryption Project V2\Encryption-Decryption\Encryption & Decryption\obj\Debug\Encryption___Decryption.fmMain.resources
